@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Simple Game</title>
+    <!-- Bootstrap -->
+    <link href="bs/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="jsSimpleGame.js"></script>
+    <link rel="stylesheet" href="main-pg.css" type="text/css"/>
+</head>
+<body>
+    <h1 class="text-center">Simple js game</h1>
+    <!--Displays the current balance and the number of rounds remaining-->
+    <!--The main area of gameplay-->
+    <!--<div id="gameParamDisp">-->
+        <!--<table>-->
+        <!--<p id="bal"></p>-->
+        <!--<p id="roundsLeft"></p>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // doesn't work-->
+    <!--<div class="panel panel-default"id="gameplayArea">-->
+        <!--<div class="panel panel-body"></div>-->
+        <!--<table class="table">-->
+    <h2>Your balance: <p id="bal"></p></h2>
+    <h2>Rounds remaining: <p id="roundsLeft"></p></h2>
+        <table class="table">
+            <!--<tr>-->
+                <!--After the 'back' button has been clicked, these attributes won't display correctly after redirecting -->
+                <!--from 'gameSetup.html'-->
+                <!--<td id="bal"></td>-->
+                <!--<td id="roundsLeft"></td>-->
+            <!--</tr>-->
+            <tbody class="text-center">
+                <tr class="symbolDisp">
+                    <td id="symbol1">x</td>
+                    <td id="symbol2">x</td>
+                    <td id="symbol3">x</td>
+                    <td id="resultCol" colspan = "2">
+                        <span id="prevRndResWin" class="text-success"></span>
+                        <span id="prevRndResLost" class="text-error"></span>
+                        <span id="gameEnded" class="text-warning"></span>
+                        <span id="prevRndRes" class="text-muted"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <!--<tr>-->
+                <!--<td>-->
+                <!--</td>-->
+            <!--</tr>-->
+        </table>
+    <br/>
+    <!--<button name="Play a new round" onClick="initNewRnd()" href="gameSetup.html">New round</button>-->
+    <!--</div>-->
+    <div class ="btnGroup">
+        <button id ="newRndBtn" onclick="initNewRnd()">New round</button>
+        <button id ="newGameBtn" name="Play a new round">Start a new game</button>
+    </div>
+    <script type="text/javascript">
+//        function backToSetup() {
+//            alert("Do you want to go back to the setup page?");
+//            location.href = "gameSetup.html";
+//        }
+        document.getElementById("newGameBtn").onclick = function() {
+            location.href = "gameSetup.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+table {
+    border: 5px dashed #7efa62;
+    border-collapse: separate;
+    border-spacing: 10px;
+    /*text-align: left;*/
+    /*padding :5px;*/
+    float:left;
+}
+
+td {
+    /*border-spacing: 20px 20px;*/
+    padding: 5px;
+    text-align: left;
+}
+
+/*#gameParamDisp {*/
+    /*position: fixed;*/
+    /*up: 200px;*/
+    /*margin-bottom: 40px;*/
+/*}*/
+
+/*#gameplayArea {*/
+    /*float:left;*/
+    /*position:fixed;*/
+    /*up:300px;*/
+    /*margin-top: 10px;*/
+/*}*/
